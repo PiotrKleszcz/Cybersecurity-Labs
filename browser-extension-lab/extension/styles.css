@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+.container {
+  padding: 16px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #21262d;
+}
+
+.header h1 {
+  font-size: 18px;
+  color: #58a6ff;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #8b949e;
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background: #161b22;
+  border: 1px solid #21262d;
+}
+
+.status-card.safe {
+  border-color: #238636;
+  background: #0d1f0f;
+}
+
+.status-card.warning {
+  border-color: #9e6a03;
+  background: #1f1a0d;
+}
+
+.status-card.danger {
+  border-color: #da3633;
+  background: #1f0d0d;
+}
+
+.status-icon {
+  font-size: 28px;
+}
+
+.status-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.checks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #161b22;
+  border-radius: 6px;
+  border: 1px solid #21262d;
+  font-size: 12px;
+}
+
+.check-icon {
+  font-size: 14px;
+  min-width: 20px;
+}
+
+.check-label {
+  flex: 1;
+  color: #8b949e;
+}
+
+.check-result {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.check-result.pass {
+  color: #3fb950;
+}
+
+.check-result.fail {
+  color: #f85149;
+}
+
+.check-result.warn {
+  color: #d29922;
+}
+
+.url-display {
+  padding: 10px;
+  background: #161b22;
+  border-radius: 6px;
+  border: 1px solid #21262d;
+  margin-bottom: 12px;
+}
+
+.url-label {
+  font-size: 10px;
+  color: #8b949e;
+  margin-bottom: 4px;
+}
+
+.url-text {
+  font-size: 11px;
+  color: #58a6ff;
+  word-break: break-all;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  color: #484f58;
+}
