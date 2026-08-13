@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fifth Ace Security Shield</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🛡️ Security Shield</h1>
+      <p class="subtitle">Fifth Ace Security</p>
+    </div>
+
+    <div class="status-card" id="statusCard">
+      <div class="status-icon" id="statusIcon">⏳</div>
+      <div class="status-text" id="statusText">Analyzing...</div>
+    </div>
+
+    <div class="checks">
+      <div class="check-item" id="httpsCheck">
+        <span class="check-icon">⏳</span>
+        <span class="check-label">HTTPS Connection</span>
+        <span class="check-result" id="httpsResult">-</span>
+      </div>
+      <div class="check-item" id="phishingCheck">
+        <span class="check-icon">⏳</span>
+        <span class="check-label">Phishing Detection</span>
+        <span class="check-result" id="phishingResult">-</span>
+      </div>
+      <div class="check-item" id="domainCheck">
+        <span class="check-icon">⏳</span>
+        <span class="check-label">Domain Analysis</span>
+        <span class="check-result" id="domainResult">-</span>
+      </div>
+      <div class="check-item" id="urlCheck">
+        <span class="check-icon">⏳</span>
+        <span class="check-label">URL Safety</span>
+        <span class="check-result" id="urlResult">-</span>
+      </div>
+    </div>
+
+    <div class="url-display">
+      <p class="url-label">Current URL:</p>
+      <p class="url-text" id="currentUrl">Loading...</p>
+    </div>
+
+    <div class="footer">
+      <p>Fifth Ace Security © 2026</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
