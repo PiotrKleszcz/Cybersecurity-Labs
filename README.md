@@ -8,6 +8,7 @@ Hands-on cybersecurity labs documenting real-world attack and defense scenarios 
 
 | Project | Description | Tools | Status |
 |---|---|---|---|
+| [Cyber Essentials Readiness Audit Lab](./cyber-essentials-readiness-audit-lab) | Assessed a Windows 11 endpoint against the five Cyber Essentials controls, removed admin rights from the everyday account, and verified the fix. | PowerShell, Nmap, Windows Defender | ✅ Complete |
 | [firewall-lab](./firewall-lab) | Host firewall hardening — iptables & nftables rules, logging blocked traffic | iptables, nftables | ✅ Complete |
 | [suricata-ids-lab](./suricata-ids-lab) | Network IDS — custom rules, SSH brute-force detection | Suricata 8.0.3 | ✅ Complete |
 | [dns-spoofing-lab](./dns-spoofing-lab) | MITM — ARP poisoning + DNS spoofing against a Windows 11 victim | Ettercap | ✅ Complete |
@@ -74,19 +75,7 @@ Each lab maps to specific NIS2 Article 21 security requirements, demonstrating p
 
 ## 🖥️ Lab Environment
 
-| Role | System | IP | Purpose |
-|---|---|---|---|
-| 💣 Attacker / Analyst | Kali Linux 2026.2 | 192.168.253.141 | Offensive tools, analysis, scripting |
-| 🎯 IDS Sensor | Ubuntu Desktop | 192.168.253.142 | Suricata, encryption, forensic target |
-| 🎯 Victim / Target | Windows 11 Pro | 192.168.253.146 | MITM, exploitation, BitLocker target |
-| 🎯 Target | Ubuntu Server 25.10 | 192.168.253.152 | Cowrie honeypot, SSH |
-| 🎯 Target | Fedora Linux | 192.168.253.148 | Network enumeration |
-| 🎯 Target | Fedora Server | 192.168.253.149 | SSH/HTTP brute-force |
-| 📡 Wireless | Alfa AWUS036ACH (RTL8812AU) | — | Monitor mode, packet injection |
-| ⚙️ Hypervisor | VMware Fusion 26H1 | — | VM management (Bridged/NAT) |
-| 💻 Host | MacBook Air M2 (16GB) | — | macOS host, GPU cracking (Metal) |
-
-**Internal network scope:** `192.168.253.0/24`
+As of 5 November 2026, my VMware Fusion library on a MacBook Air M2 contains five virtual machines: Windows 11 Pro, Kali Linux, Ubuntu Desktop, Fedora Linux and Debian 13. Individual lab reports document the systems, network settings and tools used for each exercise.
 
 ---
 
@@ -98,10 +87,10 @@ Each lab maps to specific NIS2 Article 21 security requirements, demonstrating p
 
 ## 🎯 Goal
 
-Build practical, documented cybersecurity skills through hands-on labs covering offensive security, network analysis, wireless attacks, cryptography, and defensive monitoring — all conducted in a controlled VMware environment and mapped to NIS2 Article 21 controls for SME readiness.
+Build practical, documented cybersecurity skills through hands-on labs covering offensive security, network analysis, wireless attacks, cryptography, and defensive monitoring.
 
 ---
 
 ## ⚠️ Disclaimer
 
-All labs are conducted in a controlled virtual environment for educational purposes only. No attacks were performed on systems without explicit authorization.
+The projects include controlled lab exercises and an authorised external security audit of Fifth Ace’s own website, fifthace.net. Testing was limited to authorised targets.
